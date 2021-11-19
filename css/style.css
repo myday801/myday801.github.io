@@ -1,0 +1,457 @@
+@charset 'utf-8';
+@import url('notosanskr/NotoSansKR.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline-style: none;
+    box-sizing: border-box;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+html {
+    font-size: 10px;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* 공통 클래스 */
+.clearfix::after {
+    content: '';
+    position: relative;
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.number-left {
+    position: relative;
+    display: inline-block;
+    padding-top: 10rem;
+    padding-left: 15rem;
+}
+
+.pg-title-left {
+    position: absolute;
+    top: 16rem;
+    left: 21rem;
+    display: block;
+}
+
+.number-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: inline-block;
+    padding-top: 10rem;
+    padding-right: 15rem;
+}
+
+.pg-title-right {
+    position: absolute;
+    top: 16rem;
+    right: 21rem;
+    display: block;
+}
+
+/* 위로가기 */
+.gotop {
+    position: fixed;
+
+    left: calc(50% + 65rem);
+    transform: translateX(-50%);
+
+    bottom: 15rem;
+    width: 5rem;
+    height: 5rem;
+    border: 0;
+    background-color: #000;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 5rem;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.gotop:hover {
+    background-color: #f00;
+}
+
+.wrap {
+    position: relative;
+    display: block;
+}
+
+.container {
+    position: relative;
+    display: block;
+    width: 130rem;
+    margin: 0 auto;
+}
+
+/* 상단영역 */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 10rem;
+    z-index: 999;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.header .container {
+    height: 100%;
+}
+
+.logo {
+    position: absolute;
+    left: 0rem;
+    top: 2.5rem;
+    display: block;
+    z-index: 99;
+}
+
+.logo img {}
+
+.gnb {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding-left: 27.3rem;
+}
+
+.gnb li {
+    position: relative;
+    display: block;
+    float: left;
+    padding: 4rem 0;
+}
+
+.gnb li a {
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 0 10rem;
+}
+
+.gnb li:hover a {
+    color: #684595;
+}
+
+.gnb li a:first-child {
+    padding-left: 0;
+}
+
+/* visual 영역 */
+.visual {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 97rem;
+
+    background: url('../images/bg_1.png') no-repeat center;
+    background-size: cover;
+}
+
+
+/* about 영역 */
+.about {
+    position: relative;
+    display: block;
+    height: 97rem;
+}
+
+.about .container {
+    height: 100%;
+}
+
+.about-top {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 30rem;
+}
+
+.about-main {
+    height: 77rem;
+    overflow: hidden;
+}
+
+.about-left {
+    position: relative;
+    display: block;
+    width: 53rem;
+    float: left;
+}
+
+.about-right {
+    position: relative;
+    display: block;
+    width: 77rem;
+    float: right;
+}
+
+.about-right h1 {
+    padding-top: 10rem;
+    font-size: 3.5rem;
+}
+
+.about-right em {
+    font-style: normal;
+    color: #684595;
+}
+
+/* 
+.about-txt-1 {
+    padding-top: 10rem;
+}
+
+.about-txt-2 {
+    padding-top: 2rem;
+} */
+
+.about-right h3 {
+    display: block;
+    font-size: 2.5rem;
+    padding-top: 2rem;
+}
+
+.about-right p {
+    display: block;
+    font-size: 1.4rem;
+    padding-top: 2rem;
+}
+
+.prof-skill {}
+
+.skill-list {
+    position: relative;
+    display: block;
+}
+
+.skill-list li {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 1rem 0;
+}
+
+.skill-cate {
+    display: block;
+    width: 15%;
+    float: left;
+    font-size: 1.4rem;
+}
+
+.skill-level {
+    display: block;
+    width: 85%;
+    float: left;
+}
+
+/* photoshop 성취율 */
+#skill_photo {
+    width: 20rem;
+    height: 1rem;
+}
+
+/* illustrator 성취율 */
+#skill_illust {
+    width: 20rem;
+    height: 1rem;
+}
+
+/* html 성취율 */
+#skill_html {
+    width: 20rem;
+    height: 1rem;
+}
+
+/* css 성취율 */
+#skill_css {
+    width: 20rem;
+    height: 1rem;
+}
+
+/* jquery 성취율 */
+#skill_jquery {
+    width: 20rem;
+    height: 1rem;
+}
+
+/* publishing 영역 */
+.pub {
+    position: relative;
+    display: block;
+    height: 97rem;
+}
+
+.pub-top {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 30rem;
+}
+
+.pub .container {}
+
+.pub-bg {
+    position: absolute;
+    left: 17.5rem;
+    top: 0;
+    display: block;
+    width: 200%;
+    height: 66.5rem;
+    background: url('../images/pub_bg.png') no-repeat center;
+    background-size: cover;
+}
+
+/* redesign 영역 */
+.rede {
+    position: relative;
+    display: block;
+    height: 97rem;
+}
+
+.rede-top {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 30rem;
+}
+
+.rede .container {
+    height: 100%;
+}
+
+.rede-bg {
+    position: absolute;
+    left: 17.5rem;
+    top: 0;
+    display: block;
+    width: 200%;
+    height: 66.5rem;
+    background: url('../images/rede_bg.png') no-repeat center;
+    background-size: cover;
+}
+
+.sw-rede {}
+
+.rede-box {
+    position: relative;
+    display: block;
+    height: 50rem;
+    text-align: center;
+}
+
+.rede-box-desc {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    text-align: center;
+    color: #000;
+    padding: 5rem;
+    border-radius: 1rem;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.rede-box:hover .rede-box-desc {
+    opacity: 1;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.rede-box-desc h3 {
+    font-size: 3.5rem;
+    margin-bottom: 5rem;
+}
+
+.rede-box-desc ul {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 5rem;
+}
+
+.rede-box-bt {
+    position: relative;
+    display: block;
+    width: 7.5rem;
+    height: 2.5rem;
+}
+
+.rede-box-bt a {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 1.3rem 0rem;
+    border: 0.1rem solid #000;
+    border-radius: 5rem;
+    text-align: center;
+    width: 8.5rem;
+}
+
+/* life 영역 */
+.life {
+    position: relative;
+    display: block;
+    height: 97rem;
+}
+
+.life .container {
+    height: 70%;
+}
+
+.life-pic {
+    position: relative;
+    display: block;
+    width: 54.5rem;
+    height: 49.5rem;
+}
+
+.life-pic img {}
+
+/* contact 영역 */
+.contact {
+    position: relative;
+    display: block;
+    height: 64rem;
+}
+
+.contact .container {
+    height: 100%;
+}
+
+.contact-text {
+    padding-top: 5rem;
+}
+
+.contact-text p {
+    font-size: 2.5rem;
+    line-height: 1;
+}
