@@ -140,12 +140,36 @@ $(document).ready(function () {
         }
     });
 
-    photo.animate(1.0); // Number from 0.0 to 1.0
-    illust.animate(1.0); // Number from 0.0 to 1.0
-    html.animate(1.0); // Number from 0.0 to 1.0
-    css.animate(1.0); // Number from 0.0 to 1.0
-    jquery.animate(1.0); // Number from 0.0 to 1.0
+    // 스크롤을 했을 때 모션 시작
+    var sc_y = $(window).scrollTop();
+    $(window).scroll(function () {
 
+        sc_y = $(window).scrollTop();
+
+        if (sc_y >= 1100) {
+            photo.animate(1.0); // Number from 0.0 to 1.0
+            illust.animate(1.0); // Number from 0.0 to 1.0
+            html.animate(1.0); // Number from 0.0 to 1.0
+            css.animate(1.0); // Number from 0.0 to 1.0
+            jquery.animate(1.0); // Number from 0.0 to 1.0 
+        }
+    });
+
+    // publishing 슬라이드
+    new Swiper(".sw-pub", {
+        slidesPerView: 3,
+        loop: true,
+        spaceBetween: 20,
+        // pagination: {
+        //     el: ".swiper-pagination",
+        //     dynamicBullets: true,
+        //     clickable: true
+        // },
+        navigation: {
+            nextEl: ".pub-next",
+            prevEl: ".pub-prev",
+        },
+    });
 
     // redesign 슬라이드
     new Swiper(".sw-rede", {
@@ -153,13 +177,15 @@ $(document).ready(function () {
         loop: true,
         spaceBetween: 20,
         pagination: {
-            el: ".swiper-pagination",
+            el: ".rede-pagination",
             dynamicBullets: true,
             clickable: true
         },
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: ".rede-next",
+            prevEl: ".rede-prev",
         },
     });
+
+    
 });
