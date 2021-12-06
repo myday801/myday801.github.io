@@ -1,0 +1,385 @@
+@charset 'utf-8';
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline-style: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+img {
+    vertical-align: middle;
+    border: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+html {
+    font-size: 10px;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'nanumsquare';
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+/* 공통 클래스 */
+.container {
+    position: relative;
+    display: block;
+    width: 130rem;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: '';
+    position: relative;
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.title-box {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 30rem;
+}
+
+.num-left {
+    position: absolute;
+    top: 10rem;
+    left: 30rem;
+    display: inline-block;
+}
+
+.tit-left {
+    position: absolute;
+    top: 16rem;
+    left: 37rem;
+    display: inline-block;
+}
+
+.num-right {
+    position: absolute;
+    top: 10rem;
+    right: 30rem;
+    display: inline-block;
+}
+
+.tit-right {
+    position: absolute;
+    top: 16rem;
+    right: 35rem;
+    display: inline-block;
+}
+
+.wrap {
+    position: relative;
+    display: block;
+}
+
+/* 상단 */
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 10rem;
+    background: #fff;
+    z-index: 999;
+}
+
+.header .container {
+    height: 100%;
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+    top: 2.5rem;
+    display: block;
+    z-index: 99;
+}
+
+.gnb {
+    position: relative;
+    display: block;
+    padding-left: 30rem;
+}
+
+.gnb li {
+    position: relative;
+    display: block;
+    float: left;
+
+    padding: 4rem 0;
+}
+
+.gnb li a {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1.5rem 5rem;
+}
+
+.gnb li:hover a {
+    color: #684595;
+}
+
+/* 비주얼 */
+.visual {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 97rem;
+
+    background: url('../images/visual_bg.png') no-repeat center;
+    background-size: cover;
+}
+
+/* about */
+.about {
+    position: relative;
+    display: block;
+    height: 97rem;
+}
+
+.about .contaier {
+    height: 97rem;
+}
+
+.about-left {
+    position: relative;
+    display: block;
+    float: left;
+    width: 53rem;
+    height: 100%;
+
+    padding-top: 25rem;
+}
+
+.about-left img {}
+
+.about-right {
+    position: relative;
+    display: block;
+    float: right;
+    width: 77rem;
+}
+
+.about-right h1 {
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+
+    padding-top: 11rem;
+}
+
+.about-right em {
+    color: #684595;
+    font-style: normal;
+}
+
+.about-right b {
+    font-weight: 700;
+    padding-left: 33.5rem;
+}
+
+.about-text {
+    position: relative;
+    display: block;
+    padding-top: 5rem;
+    padding-left: 10rem;
+}
+
+.about-text h2 {
+    color: #684595;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.about-text p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 4rem 0;
+}
+
+.about-skill {}
+
+.skill-list {
+    position: relative;
+    display: block;
+    padding-top: 4rem;
+}
+
+.skill-list li {
+    position: relative;
+    display: block;
+    padding: 1rem 0;
+    overflow: hidden;
+}
+
+.skill-cate {
+    display: block;
+    width: 15%;
+    float: left;
+    font-size: 1.8rem;
+}
+
+.skill-level {
+    display: block;
+    width: 85%;
+    float: left;
+}
+
+/* photoshop 성취율 */
+#skill_photo {
+    width: 20rem;
+    height: 1rem;
+}
+
+/* illust 성취율 */
+#skill_illust {
+    width: 20rem;
+    height: 1rem;
+}
+
+/* html 성취율 */
+#skill_html {
+    width: 20rem;
+    height: 1rem;
+}
+
+/* css 성취율 */
+#skill_css {
+    width: 20rem;
+    height: 1rem;
+}
+
+/* jquery 성취율 */
+#skill_jquery {
+    width: 20rem;
+    height: 1rem;
+}
+
+/* publishing */
+.publ {
+    position: relative;
+    display: block;
+}
+
+.publ .container {
+    height: 100%;
+}
+
+.sw-publ {}
+
+.swiper-wrapper {}
+
+.swiper-slide {
+    position: relative;
+    display: block;
+    width: 42rem;
+}
+
+.publ-box {}
+
+.text-box {
+    position: relative;
+    display: block;
+    padding-top: 5rem;
+}
+
+.text-left {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.text-left h2 {
+    color: #684595;
+    font-size: 2.5rem;
+    font-weight: 300;
+
+    padding: 1rem 0;
+}
+
+.text-right {
+    position: relative;
+    display: block;
+    float: right;
+}
+
+.text-right p {
+    font-size: 1.8rem;
+    font-weight: 400;
+
+    padding: 1rem 0;
+}
+
+.publ-box-button {
+    position: relative;
+    display: block;
+    width: 8rem;
+    height: 2.5rem;
+}
+
+.publ-box-button a {
+    display: inline-block;
+    width: 10rem;
+
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: center;
+
+    border: 0.2rem solid #684595;
+    border-radius: 5rem;
+
+    padding: 0.2rem 0.5rem;
+}
+
+/* otherwork */
+.otherwork {
+    position: relative;
+    display: block;
+}
+
+/* life */
+.life {
+    position: relative;
+    display: block;
+}
+
+/* contact */
+.contact {
+    position: relative;
+    display: block;
+    height: 42rem;
+}
+
+.contact .container {
+    height: 100%;
+}
+
+/* footer */
+.footer {
+    position: relative;
+    display: block;
+
+    background: url('../images/footerbar.png') no-repeat center;
+}
