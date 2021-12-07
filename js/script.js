@@ -123,11 +123,11 @@ $(document).ready(function () {
         sc_y = $(window).scrollTop();
 
         if (sc_y >= 1100) {
-            photo.animate(1.0); // Number from 0.0 to 1.0
-            illust.animate(1.0); // Number from 0.0 to 1.0
-            html.animate(1.0); // Number from 0.0 to 1.0
-            css.animate(1.0); // Number from 0.0 to 1.0
-            jquery.animate(1.0); // Number from 0.0 to 1.0 
+            photo.animate(0.8); // Number from 0.0 to 1.0
+            illust.animate(0.8); // Number from 0.0 to 1.0
+            html.animate(0.9); // Number from 0.0 to 1.0
+            css.animate(0.8); // Number from 0.0 to 1.0
+            jquery.animate(0.6); // Number from 0.0 to 1.0 
         }
     });
 

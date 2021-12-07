@@ -359,9 +359,124 @@ body {
     display: block;
 }
 
+.otherwork .container {
+    height: 97rem;
+}
+
+.work-left {
+    position: relative;
+    display: block;
+    float: left;
+    width: 65rem;
+    text-align: center;
+}
+
+.work-left p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding-top: 2rem;
+}
+
+.work-1 {
+    position: relative;
+    display: block;
+}
+
+.work-3 {
+    position: relative;
+    display: block;
+    padding-top: 2rem;
+}
+
+.work-right {
+    position: relative;
+    display: block;
+    float: right;
+    width: 65rem;
+    text-align: center;
+}
+
+.work-right p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding-top: 2rem;
+}
+
+.work-2 {
+    position: relative;
+    display: block;
+}
+
+.work-4 {
+    position: relative;
+    display: block;
+    padding-top: 2rem;
+}
+
 /* life */
 .life {
     position: relative;
+    display: block;
+}
+
+.life .container {
+    height: 97rem;
+}
+
+.life-textbox {
+    position: relative;
+    display: block;
+    float: right;
+}
+
+.life-textbox span {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.life-top {
+    position: relative;
+    display: block;
+    height: 30rem;
+    margin-top: 2rem;
+}
+
+.life-1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+}
+
+.life-main {
+    position: relative;
+    display: block;
+    height: 30rem;
+    margin: 1.5rem 0;
+}
+
+.life-2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+}
+
+.life-2 .life-textbox {
+    float: left;
+}
+
+.life-bottom {
+    position: relative;
+    display: block;
+    height: 30rem;
+    margin-bottom: 2rem;
+}
+
+.life-3 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
     display: block;
 }
 
@@ -376,10 +491,52 @@ body {
     height: 100%;
 }
 
+.contact-textbox {
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+.contact-textbox span {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.contact-textbox p {
+    font-size: 2.5rem;
+    font-weight: 400;
+    padding-top: 5rem;
+}
+
+.contact-box {
+    position: relative;
+    display: block;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.contact-box li {
+    position: relative;
+    display: inline-block;
+    padding: 0 2rem;
+}
+
+.contact-box li a {}
+
 /* footer */
 .footer {
     position: relative;
     display: block;
+    height: 4rem;
 
     background: url('../images/footerbar.png') no-repeat center;
+    background-size: cover;
+    text-align: center;
+}
+
+.footer span {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: center;
 }
