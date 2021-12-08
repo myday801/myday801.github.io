@@ -31,12 +31,19 @@
     <!-- 딩벳폰트 참조 -->
     <!-- <link rel="stylesheet" href="css/fontello/css/animation.css">
     <link rel="stylesheet" href="css/fontello/css/fontello.css"> -->
+    <!-- aos 관련 코드 -->
+    <link href="js/aos/aos.css" rel="stylesheet">
+    <script src="js/aos/aos.js"></script>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/script.js"></script>
 </head>
 
 <body>
+    <!-- 위로가기 -->
+    <button class="gotop">
+        <a href=""><i class="fas fa-chevron-up"></i></a>
+    </button>
     <div class="wrap">
         <!-- 상단 -->
         <header class="header">
@@ -46,11 +53,11 @@
                 </a>
 
                 <ul class="gnb clearfix">
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#publishing">PUBLISHING</a></li>
-                    <li><a href="#otherwork">OTHERWORK</a></li>
-                    <li><a href="#life">LIFE</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="#about" class="move">ABOUT</a></li>
+                    <li><a href="#publishing" class="move">PUBLISHING</a></li>
+                    <li><a href="#otherwork" class="move">OTHERWORK</a></li>
+                    <li><a href="#life" class="move">LIFE</a></li>
+                    <li><a href="#contact" class="move">CONTACT</a></li>
                 </ul>
             </div>
         </header>
@@ -197,9 +204,9 @@
                                 </div>
                             </div>
                             <div class="publ-box-button">
-                                <a href="" target="_blank">Original</a>
-                                <a href="" target="_blank">Site View</a>
-                                <a href="" target="_blank">Git</a>
+                                <a href="https://greenjuice.pulmuone.com/" target="_blank">Original</a>
+                                <a href="https://myday801.github.io/greenjuice/" target="_blank">Site View</a>
+                                <a href="https://github.com/myday801/greenjuice" target="_blank">Git</a>
                             </div>
                         </div>
 
@@ -225,9 +232,9 @@
                                 </div>
                             </div>
                             <div class="publ-box-button">
-                                <a href="" target="_blank">Original</a>
-                                <a href="" target="_blank">Site View</a>
-                                <a href="" target="_blank">Git</a>
+                                <a href="https://shop.hansalim.or.kr/shopping/spMain.do" target="_blank">Original</a>
+                                <a href="https://myday801.github.io/hansalim/" target="_blank">Site View</a>
+                                <a href="https://github.com/myday801/hansalim" target="_blank">Git</a>
                             </div>
                         </div>
 
@@ -253,7 +260,7 @@
                                 </div>
                             </div>
                             <div class="publ-box-button">
-                                <a href="" target="_blank">Original</a>
+                                <a href="https://www.pulmuonewater.com/" target="_blank">Original</a>
                                 <a href="" target="_blank">Site View</a>
                                 <a href="" target="_blank">Git</a>
                             </div>
@@ -281,9 +288,9 @@
                                 </div>
                             </div>
                             <div class="publ-box-button">
-                                <a href="" target="_blank">Original</a>
-                                <a href="" target="_blank">Site View</a>
-                                <a href="" target="_blank">Git</a>
+                                <a href="https://nexus-official.com/" target="_blank">Original</a>
+                                <a href="https://myday801.github.io/nexus/" target="_blank">Site View</a>
+                                <a href="https://github.com/myday801/nexus" target="_blank">Git</a>
                             </div>
                         </div>
                     </div>
@@ -331,38 +338,38 @@
             </div>
 
             <div class="container">
-                <div class="life-top">
-                    <div class="life-1">
+                <div class="life-top" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+                    <div class="life-pic">
                         <img src="images/life_1.png" alt="footsal">
                     </div>
-                    <div class="life-textbox">
+                    <div class="life-contents">
                         <img src="images/life_tit1.png" alt="풋살">
-                        <span>
+                        <span class="life-text">
                             매주 2회 풋살을 하며 체력을 기르고 팀원들과의 협동심의 중요성을 알게 되었습니다.
                         </span>
                     </div>
                 </div>
 
-                <div class="life-main">
-                    <div class="life-2">
+                <div class="life-main" data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+                    <div class="life-pic">
                         <img src="images/life_2.png" alt="collection">
                     </div>
-                    <div class="life-textbox">
+                    <div class="life-contents">
                         <img src="images/life_tit2.png" alt="콜렉션">
-                        <span>
+                        <span class="life-text">
                             어딜 놀러가든 소품샵을 꼭 찾아보고 들립니다. 세상의 모든 작은 것들을 귀여워 합니다. <br>
                             어릴 때 좋아했던 만화영화의 캐릭터 상품이나, 인형을 모으는 것이 취미입니다.
                         </span>
                     </div>
                 </div>
 
-                <div class="life-bottom">
-                    <div class="life-3">
+                <div class="life-bottom" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+                    <div class="life-pic">
                         <img src="images/life_3.png" alt="game">
                     </div>
-                    <div class="life-textbox">
+                    <div class="life-contents">
                         <img src="images/life_tit3.png" alt="게임">
-                        <span>
+                        <span class="life-text">
                             인형을 모으는 것 만큼이나 여러가지 게임을 사모으고 해보는 것도 좋아합니다. <br>
                             게임을 하며 알고지낸 사람들과도 정기적으로 오프라인 모임을 가지며 6년 넘게 친목을 쌓고 있습니다.
                         </span>
@@ -389,7 +396,8 @@
                     <li><a href="#"><img src="images/pdf-icon.png" alt="pdf"></a></li>
                     <li><a href="https://github.com/myday801" target="_blank"><img src="images/githubicon.png"
                                 alt="git"></a></li>
-                    <li><a href="https://open.kakao.com/o/sOW2f4Ld" target="_blank"><img src="images/kakaotalk.png" alt="kakao"></a></li>
+                    <li><a href="https://open.kakao.com/o/sOW2f4Ld" target="_blank"><img src="images/kakaotalk.png"
+                                alt="kakao"></a></li>
                 </ul>
             </div>
         </section>

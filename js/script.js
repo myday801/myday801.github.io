@@ -1,6 +1,40 @@
 $(document).ready(function () {
-    // skill_progressbar 영역
 
+    // 위로가기 기능
+    $('.gotop').click(function () {
+        $('html, body').animate({
+            scrollTop: 0
+        });
+    });
+
+    // 부드럽게 위치 이동하는 코드
+    var moveEl = $('.move');
+    // 클릭시 해당위치로 부드럽게 이동한다.
+    $.each(moveEl, function () {
+
+        $(this).click(function (e) {
+            // href 를 일단 막아서 위치이동 못하게함.
+            e.preventDefault();
+            // 가야하는 곳의 위치를 파악한다.
+            var tg = $(this).attr('href');
+            var num;
+            // 혹시 #아이디 가 없다면
+            if (tg == '#') {
+                num = 0;
+            } else {
+                // 어느 만큼 이동해야 하는 지를 숫자로 파악한다.
+                num = $(tg).offset().top;
+            }
+
+            // 움직이자
+            $('html, body').stop().animate({
+                scrollTop: num
+            }, 1000);
+        });
+    });
+
+
+    // skill_progressbar 영역
     // photoshop 성취율
     var photo = new ProgressBar.Line(skill_photo, {
         strokeWidth: 4,
@@ -152,4 +186,8 @@ $(document).ready(function () {
             disableOnInteraction: false,
         },
     });
+
+    // aos 관련
+    // life aos 
+    AOS.init();
 });
