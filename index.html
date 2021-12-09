@@ -34,6 +34,7 @@
     <!-- aos 관련 코드 -->
     <link href="js/aos/aos.css" rel="stylesheet">
     <script src="js/aos/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/script.js"></script>
@@ -42,13 +43,13 @@
 <body>
     <!-- 위로가기 -->
     <button class="gotop">
-        <a href=""><i class="fas fa-chevron-up"></i></a>
+        <i class="fas fa-chevron-up"></i>
     </button>
     <div class="wrap">
         <!-- 상단 -->
         <header class="header">
             <div class="container">
-                <a href="#visual" class="logo">
+                <a href="#visual" class="logo move">
                     <img src="images/logo.png" alt="logo">
                 </a>
 
@@ -76,7 +77,7 @@
                     <img src="images/profile.png" alt="profile">
                 </div>
                 <div class="about-right">
-                    <h1>
+                    <h1 data-aos="fade-left">
                         "<em>새로운 시도</em>를 좋아하는 웹퍼블리셔 <br>
                         <b>차영림입니다."</b>
                     </h1>
@@ -308,22 +309,30 @@
             <div class="container clearfix">
                 <div class="work-left">
                     <div class="work-1">
-                        <img src="images/otherwork_1.png" alt="지코바">
+                        <a href="images/otherwork_1_1.png" data-lightbox="image-1" data-title="지코바치킨 리디자인">
+                            <img src="images/otherwork_1.png" alt="지코바">
+                        </a>
                         <p>지코바치킨 리디자인</p>
                     </div>
                     <div class="work-3">
-                        <img src="images/otherwork_3.png" alt="아이콘">
+                        <a href="images/otherwork_3.png" data-lightbox="image-1" data-title="아이콘 디자인">
+                            <img src="images/otherwork_3.png" alt="아이콘">
+                        </a>
                         <p>아이콘 디자인</p>
                     </div>
 
                 </div>
                 <div class="work-right">
                     <div class="work-2">
-                        <img src="images/otherwork_2.png" alt="캐릭터">
+                        <a href="images/otherwork_2.png" data-lightbox="image-1" data-title="펜툴을 이용하여 캐릭터 만들기">
+                            <img src="images/otherwork_2.png" alt="캐릭터">
+                        </a>
                         <p>캐릭터 제작</p>
                     </div>
                     <div class="work-4">
-                        <img src="images/otherwork_4.png" alt="로고디자인">
+                        <a href="images/otherwork_4.png" data-lightbox="image-1" data-title="로고 디자인">
+                            <img src="images/otherwork_4.png" alt="로고디자인">
+                        </a>
                         <p>로고 디자인</p>
                     </div>
                 </div>
@@ -338,19 +347,21 @@
             </div>
 
             <div class="container">
-                <div class="life-top" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+                <div class="life-top" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="5000"
+                    data-aos-duration="1000">
                     <div class="life-pic">
                         <img src="images/life_1.png" alt="footsal">
                     </div>
                     <div class="life-contents">
                         <img src="images/life_tit1.png" alt="풋살">
                         <span class="life-text">
-                            매주 2회 풋살을 하며 체력을 기르고 팀원들과의 협동심의 중요성을 알게 되었습니다.
+                            매주 2회 풋살을 하며 체력을 기르고 협동심의 중요성을 알게 되었습니다.
                         </span>
                     </div>
                 </div>
 
-                <div class="life-main" data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+                <div class="life-main" data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="5400"
+                    data-aos-duration="1000">
                     <div class="life-pic">
                         <img src="images/life_2.png" alt="collection">
                     </div>
@@ -363,7 +374,8 @@
                     </div>
                 </div>
 
-                <div class="life-bottom" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+                <div class="life-bottom" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="5600"
+                    data-aos-duration="1000">
                     <div class="life-pic">
                         <img src="images/life_3.png" alt="game">
                     </div>

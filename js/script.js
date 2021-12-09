@@ -154,6 +154,8 @@ $(document).ready(function () {
     var sc_y = $(window).scrollTop();
     $(window).scroll(function () {
 
+        console.log(sc_y);
+
         sc_y = $(window).scrollTop();
 
         if (sc_y >= 1100) {
@@ -190,4 +192,5 @@ $(document).ready(function () {
     // aos 관련
     // life aos 
     AOS.init();
+
 });
