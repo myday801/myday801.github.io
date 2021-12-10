@@ -39,7 +39,7 @@ body {
 /* 위로가기 */
 .gotop {
     position: fixed;
-    right:  10rem;
+    right:  12rem;
     bottom: 5rem;
     
     display: block;
@@ -325,7 +325,7 @@ body {
 .text-box {
     position: relative;
     display: block;
-    padding-top: 5rem;
+    padding-top: 2rem;
 }
 
 .text-left {

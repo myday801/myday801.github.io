@@ -1,5 +1,9 @@
 $(document).ready(function () {
 
+    $(function() {  
+        $("body").niceScroll();
+    });
+
     // 위로가기 기능
     $('.gotop').click(function () {
         $('html, body').animate({
@@ -153,8 +157,6 @@ $(document).ready(function () {
     // 스크롤을 했을 때 모션 시작
     var sc_y = $(window).scrollTop();
     $(window).scroll(function () {
-
-        console.log(sc_y);
 
         sc_y = $(window).scrollTop();
 
